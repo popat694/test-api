@@ -25,4 +25,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-   
+    - run: mv /var/www/html/actions-runner/_work/test-api/test-api/* /var/www/test-ci-cd
